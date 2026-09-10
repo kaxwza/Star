@@ -1,0 +1,5 @@
+# รับค่าชื่อจากผู้ใช้
+name = input("Please enter your name: ")
+
+# แสดงผลข้อความทักทาย
+print(f"Hello {name}! Nice to meet you")
