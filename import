@@ -1,0 +1,16 @@
+import docx
+
+# 1. สร้างเอกสารใหม่
+doc = docx.Document()
+
+# 2. เพิ่มหัวข้อและข้อความ
+doc.add_heading('เอกสารทดสอบการสร้างด้วย Python', level=1)
+doc.add_paragraph('สวัสดีครับ นี่คือข้อความที่สร้างมาจากสคริปต์ Python แบบง่ายๆ')
+
+# 3. เพิ่มรายการ (Bullet point)
+doc.add_paragraph('รายการที่ 1: เรียนรู้การสร้างไฟล์', style='List Bullet')
+doc.add_paragraph('รายการที่ 2: บันทึกไฟล์ลงเครื่อง', style='List Bullet')
+
+# 4. บันทึกเป็นไฟล์ .docx
+doc.save('Simple_Doc.docx')
+print("สร้างไฟล์ Word เรียบร้อยแล้ว!")
